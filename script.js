@@ -234,7 +234,7 @@ class Play {
 
     gameOver(losers) {
         const _this = this;
-        document.querySelector("#over > div > p").innerHTML = `${losers} Sucks !!`;
+        document.querySelector("#over > div > p").innerHTML = `${losers} loose !!`;
         document.getElementById("over").style.visibility = "visible";
         document.querySelector("#over .butt:first-of-type").addEventListener("click", () => {
             _this.startNewGame();
